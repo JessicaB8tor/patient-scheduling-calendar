@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<jazn-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/jazn-data.xsd">
+    <policy-store>
+        <applications>
+            <application>
+                <name>PROMISCalendarApp</name>
+                <jazn-policy>
+                    <grant>
+                        <grantee>
+                            <principals>
+                                <principal>
+                                    <class>oracle.security.jps.internal.core.principals.JpsAnonymousRoleImpl</class>
+                                    <name>anonymous-role</name>
+                                </principal>
+                            </principals>
+                        </grantee>
+                        <permissions>
+                            <permission>
+                                <class>oracle.adf.share.security.authorization.RestServicePermission</class>
+                                <name>PatientsT</name>
+                                <actions>get, create, update, delete, describe, invoke</actions>
+                            </permission>
+                            <permission>
+                                <class>oracle.adf.share.security.authorization.RestServicePermission</class>
+                                <name>CalendarEvents</name>
+                                <actions>get, create, update, delete, describe, invoke</actions>
+                            </permission>
+                            <permission>
+                                <class>oracle.adf.share.security.authorization.RestServicePermission</class>
+                                <name>Recurrences</name>
+                                <actions>get, create, update, delete, describe, invoke</actions>
+                            </permission>
+                            <permission>
+                                <class>oracle.adf.share.security.authorization.RestServicePermission</class>
+                                <name>Users</name>
+                                <actions>get, create, update, delete, describe, invoke</actions>
+                            </permission>
+                        </permissions>
+                    </grant>
+                </jazn-policy>
+            </application>
+        </applications>
+    </policy-store>
+    <system-policy/>
+</jazn-data>

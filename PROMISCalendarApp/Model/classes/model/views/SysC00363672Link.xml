@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SysC00363672Link"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  EntityAssociation="model.entities.SysC00363672Assoc">
+  <ViewLinkDefEnd
+    Name="CalendarEventsVO"
+    Cardinality="1"
+    Source="true"
+    Owner="model.views.CalendarEventsVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="CalendarEventsVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.views.CalendarEventsVO.EventId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="RecurrencesVO"
+    Cardinality="-1"
+    Owner="model.views.RecurrencesVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="RecurrencesVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.views.RecurrencesVO.EventId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

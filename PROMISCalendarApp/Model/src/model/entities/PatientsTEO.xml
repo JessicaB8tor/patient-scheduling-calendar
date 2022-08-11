@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PatientsTEO"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="PRA_OWNER.PATIENTS_T"
+  AliasName="PatientsTEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="Id"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Transient1"
+    Precision="1"
+    ColumnName="TRANSIENT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Phn"
+    IsUnique="true"
+    Precision="10"
+    ColumnName="PHN"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastName"
+    IsNotNull="true"
+    Precision="20"
+    ColumnName="LAST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FirstName"
+    IsNotNull="true"
+    Precision="20"
+    ColumnName="FIRST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FirstAlias"
+    Precision="20"
+    ColumnName="FIRST_ALIAS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FormerName"
+    Precision="20"
+    ColumnName="FORMER_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BirthDate"
+    IsNotNull="true"
+    ColumnName="BIRTH_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="Sex"
+    IsNotNull="true"
+    Precision="8"
+    ColumnName="SEX"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BirthPlace"
+    Precision="80"
+    ColumnName="BIRTH_PLACE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="80"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="RaceCode"
+    Precision="5"
+    ColumnName="RACE_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="5"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="RaceDesc"
+    Precision="80"
+    ColumnName="RACE_DESC"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="80"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MaritalStatus"
+    Precision="5"
+    ColumnName="MARITAL_STATUS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="5"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EngAbility"
+    Precision="5"
+    ColumnName="ENG_ABILITY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="5"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LanguageCode1"
+    Precision="8"
+    ColumnName="LANGUAGE_CODE1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LanguageCode2"
+    Precision="8"
+    ColumnName="LANGUAGE_CODE2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LanguageDesc1"
+    Precision="80"
+    ColumnName="LANGUAGE_DESC1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="80"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LanguageDesc2"
+    Precision="80"
+    ColumnName="LANGUAGE_DESC2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="80"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Address1"
+    Precision="30"
+    ColumnName="ADDRESS_1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Address2"
+    Precision="30"
+    ColumnName="ADDRESS_2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="City"
+    Precision="20"
+    ColumnName="CITY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Province"
+    Precision="2"
+    ColumnName="PROVINCE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PostalCode"
+    Precision="6"
+    ColumnName="POSTAL_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="6"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Region"
+    Precision="30"
+    ColumnName="REGION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="RegistrationDate"
+    IsNotNull="true"
+    ColumnName="REGISTRATION_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="HomePhone"
+    Precision="10"
+    Scale="0"
+    ColumnName="HOME_PHONE"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="WorkPhone"
+    Precision="10"
+    Scale="0"
+    ColumnName="WORK_PHONE"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="Pager"
+    Precision="10"
+    Scale="0"
+    ColumnName="PAGER"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="AltInsurer"
+    Precision="8"
+    ColumnName="ALT_INSURER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="AltInsNo"
+    Precision="20"
+    ColumnName="ALT_INS_NO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Modality"
+    Precision="5"
+    ColumnName="MODALITY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="5"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PharmacyId"
+    Precision="8"
+    Scale="0"
+    ColumnName="PHARMACY_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="LabId"
+    Precision="8"
+    Scale="0"
+    ColumnName="LAB_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="AllergiesToDrugs"
+    Precision="2000"
+    ColumnName="ALLERGIES_TO_DRUGS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2000"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Comments"
+    Precision="2000"
+    ColumnName="COMMENTS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2000"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MiddleName"
+    Precision="20"
+    ColumnName="MIDDLE_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ValidUser1"
+    Precision="16"
+    ColumnName="VALID_USER1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ValidDate1"
+    ColumnName="VALID_DATE1"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="ValidUser2"
+    Precision="16"
+    ColumnName="VALID_USER2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="16"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ValidDate2"
+    ColumnName="VALID_DATE2"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="WorkPhoneExt"
+    Precision="6"
+    Scale="0"
+    ColumnName="WORK_PHONE_EXT"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="PagerExt"
+    Precision="6"
+    Scale="0"
+    ColumnName="PAGER_EXT"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="CellPhone"
+    Precision="10"
+    Scale="0"
+    ColumnName="CELL_PHONE"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="EmailAddress"
+    Precision="60"
+    ColumnName="EMAIL_ADDRESS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Religion"
+    Precision="8"
+    ColumnName="RELIGION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PreferredContact"
+    Precision="1"
+    ColumnName="PREFERRED_CONTACT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ContactNote"
+    Precision="200"
+    ColumnName="CONTACT_NOTE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="200"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EducationLevel"
+    Precision="1"
+    ColumnName="EDUCATION_LEVEL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="TranslationNeeded"
+    Precision="1"
+    ColumnName="TRANSLATION_NEEDED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="NoMail"
+    Precision="10"
+    ColumnName="NO_MAIL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BctsId"
+    IsUnique="true"
+    Precision="10"
+    Scale="0"
+    ColumnName="BCTS_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="BctsRegDate"
+    ColumnName="BCTS_REG_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="BctsPager"
+    Precision="12"
+    ColumnName="BCTS_PAGER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="12"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    IsNotNull="true"
+    Precision="20"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreateDate"
+    IsNotNull="true"
+    ColumnName="CREATE_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="LastUpdatedBy"
+    IsNotNull="true"
+    Precision="20"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateDate"
+    IsNotNull="true"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="StudyNo"
+    ColumnName="STUDY_NO"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="NativeKidneyBiopsy"
+    Precision="1"
+    ColumnName="NATIVE_KIDNEY_BIOPSY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SpecialNeeds"
+    Precision="250"
+    ColumnName="SPECIAL_NEEDS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="250"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Ambulatory"
+    Precision="1"
+    ColumnName="AMBULATORY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="BiopsyDate"
+    ColumnName="BIOPSY_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="PharmacyId2"
+    Precision="8"
+    Scale="0"
+    ColumnName="PHARMACY_ID2"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="CbsId"
+    Precision="12"
+    ColumnName="CBS_ID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="12"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="OthAltInsSpecify"
+    Precision="30"
+    ColumnName="OTH_ALT_INS_SPECIFY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PromisId"
+    IsNotNull="true"
+    Precision="7"
+    ColumnName="PROMIS_ID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CommConsentFlag"
+    IsNotNull="true"
+    Precision="2"
+    ColumnName="COMM_CONSENT_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="McfdStatusFlag"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="MCFD_STATUS_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="McfdStatusDate"
+    ColumnName="MCFD_STATUS_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="FnRegistered"
+    Precision="1"
+    ColumnName="FN_REGISTERED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FnReserve"
+    Precision="1"
+    ColumnName="FN_RESERVE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="AborComm"
+    Precision="50"
+    ColumnName="ABOR_COMM"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EnterCanY"
+    Precision="4"
+    Scale="0"
+    ColumnName="ENTER_CAN_Y"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="EnterCanM"
+    Precision="2"
+    Scale="0"
+    ColumnName="ENTER_CAN_M"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="EnterCanD"
+    Precision="2"
+    Scale="0"
+    ColumnName="ENTER_CAN_D"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.PATIENTS_T"/>
+  <Attribute
+    Name="VirtualVisitConsentFlag"
+    IsNotNull="true"
+    Precision="2"
+    ColumnName="VIRTUAL_VISIT_CONSENT_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="VirtualVisitCapacityFlag"
+    IsNotNull="true"
+    Precision="2"
+    ColumnName="VIRTUAL_VISIT_CAPACITY_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="VirtualVisitAssitReqdFlag"
+    IsNotNull="true"
+    Precision="2"
+    ColumnName="VIRTUAL_VISIT_ASSIT_REQD_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.PATIENTS_T">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="2"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="CalendarEventsEO"
+    Association="model.entities.SysC00363666Assoc"
+    AssociationEnd="model.entities.SysC00363666Assoc.CalendarEventsEO"
+    AssociationOtherEnd="model.entities.SysC00363666Assoc.PatientsTEO"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="BctsIdUk">
+    <DesignTime>
+      <Attr Name="_isUnique" Value="true"/>
+      <Attr Name="_DBObjectName" Value="BCTS_ID_UK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.BctsId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatientPatient4Uk">
+    <DesignTime>
+      <Attr Name="_isUnique" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PATIENT_PATIENT4_UK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.Phn"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatientPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PATIENT_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.Id"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatCeaFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CEA_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PAT_CEA_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.EngAbility"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatCmsFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CMS_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PAT_CMS_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.MaritalStatus"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatCrcFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CRC_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PAT_CRC_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.RaceCode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatCrlFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CRL_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PAT_CRL_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.Religion"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatPhrFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="PHR_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PAT_PHR_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.PharmacyId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatientAltFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="ALT_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PATIENT_ALT_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.AltInsurer"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatientGenFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="GEN_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PATIENT_GEN_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.Sex"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatientLabFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LAB_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PATIENT_LAB_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.LabId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatientLan1Fk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LAN_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PATIENT_LAN1_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.LanguageCode1"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PatientLan2Fk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LAN_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PATIENT_LAN2_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.PatientsTEO.LanguageCode2"/>
+    </AttrArray>
+  </Key>
+</Entity>

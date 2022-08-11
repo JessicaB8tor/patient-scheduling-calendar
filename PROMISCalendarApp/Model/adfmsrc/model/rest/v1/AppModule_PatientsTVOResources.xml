@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48" id="AppModule_PatientsTVOResources"
+                Package="model.rest.v1" usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="PatientsTVO1" RangeSize="25" DataControl="AppModuleDataControl" id="PatientsTVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="PatientsTVO1Iter" id="PatientsT" AccessorFolder="Always">
+      <ServiceConfiguration EnableRowContextLOV="false"/>
+      <nodeDefinition DefName="model.views.PatientsTVO" Name="model.views.PatientsTVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="RecurrencesEO"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="PRA_OWNER.RECURRENCES"
+  AliasName="RecurrencesEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="RecurrenceId"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="RECURRENCE_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.RECURRENCES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="EventId"
+    Precision="8"
+    Scale="0"
+    ColumnName="EVENT_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.RECURRENCES"/>
+  <Attribute
+    Name="Recurrence"
+    IsNotNull="true"
+    Precision="10"
+    ColumnName="RECURRENCE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.RECURRENCES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="NumOccurences"
+    Precision="8"
+    Scale="0"
+    ColumnName="NUM_OCCURENCES"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.RECURRENCES"/>
+  <Attribute
+    Name="DayOfWeek"
+    Precision="10"
+    ColumnName="DAY_OF_WEEK"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.RECURRENCES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="NumOfMonth"
+    Precision="2"
+    Scale="0"
+    ColumnName="NUM_OF_MONTH"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.RECURRENCES"/>
+  <AccessorAttribute
+    Name="CalendarEventsEO"
+    Association="model.entities.SysC00363672Assoc"
+    AssociationEnd="model.entities.SysC00363672Assoc.CalendarEventsEO"
+    AssociationOtherEnd="model.entities.SysC00363672Assoc.RecurrencesEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="SysC00363671"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C00363671"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.RecurrencesEO.RecurrenceId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC00363672">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SYS_C00363665"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="SYS_C00363672"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.RecurrencesEO.EventId"/>
+    </AttrArray>
+  </Key>
+</Entity>

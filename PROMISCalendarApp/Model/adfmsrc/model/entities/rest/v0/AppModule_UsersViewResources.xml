@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48" id="AppModule_UsersViewResources"
+                Package="model.entities.rest.v0" usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="UsersView1" RangeSize="25" DataControl="AppModuleDataControl1" id="UsersView1Iter"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

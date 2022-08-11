@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="PatientsTVO1"
+    ViewObjectName="model.views.PatientsTVO"/>
+  <ViewUsage
+    Name="PatientsTVO2"
+    ViewObjectName="model.views.PatientsTVO"/>
+  <ViewUsage
+    Name="CalendarEventsVO1"
+    ViewObjectName="model.views.CalendarEventsVO"/>
+  <ViewUsage
+    Name="CalendarEventsVO2"
+    ViewObjectName="model.views.CalendarEventsVO"/>
+  <ViewUsage
+    Name="CalendarEventsVO3"
+    ViewObjectName="model.views.CalendarEventsVO"/>
+  <ViewUsage
+    Name="RecurrencesVO1"
+    ViewObjectName="model.views.RecurrencesVO"/>
+  <ViewUsage
+    Name="RecurrencesVO2"
+    ViewObjectName="model.views.RecurrencesVO"/>
+  <ViewLinkUsage
+    Name="SysC00363666Link"
+    ViewLinkObjectName="model.views.SysC00363666Link"
+    SrcViewUsageName="model.AppModule.PatientsTVO2"
+    DstViewUsageName="model.AppModule.CalendarEventsVO1"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="SysC00363672Link"
+    ViewLinkObjectName="model.views.SysC00363672Link"
+    SrcViewUsageName="model.AppModule.CalendarEventsVO3"
+    DstViewUsageName="model.AppModule.RecurrencesVO1"
+    Reversed="false"/>
+</AppModule>

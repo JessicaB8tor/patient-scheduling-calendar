@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.22.48" id="ResourceRegistry"
+             SeparateXMLFiles="false" Package="model" ClientType="Generic">
+  <pageMap>
+    <page path="v1_PatientsT" usageId="v1_AppModule_PatientsTVOResources"/>
+    <page path="v1_CalendarEvents" usageId="v1_AppModule_CalendarEventsVOResources"/>
+    <page path="v1_Recurrences" usageId="v1_AppModule_RecurrencesVOResources"/>
+    <page path="v0_Users" usageId="v0_AppModule_UsersViewResources"/>
+    <page path="v1_Users" usageId="v1_AppModule_UsersViewResources"/>
+  </pageMap>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="AppModuleDataControl1" Package="model.entities"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+  <pageDefinitionUsages>
+    <page id="v1_AppModule_PatientsTVOResources" path="model.rest.v1.AppModule_PatientsTVOResources"/>
+    <page id="v1_AppModule_CalendarEventsVOResources" path="model.rest.v1.AppModule_CalendarEventsVOResources"/>
+    <page id="v1_AppModule_RecurrencesVOResources" path="model.rest.v1.AppModule_RecurrencesVOResources"/>
+    <page id="v0_AppModule_UsersViewResources" path="model.entities.rest.v0.AppModule_UsersViewResources"/>
+    <page id="v1_AppModule_UsersViewResources" path="model.entities.rest.v1.AppModule_UsersViewResources"/>
+  </pageDefinitionUsages>
+</Application>

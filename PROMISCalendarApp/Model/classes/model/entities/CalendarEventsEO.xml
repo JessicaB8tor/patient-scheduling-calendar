@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CalendarEventsEO"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="PRA_OWNER.CALENDAR_EVENTS"
+  AliasName="CalendarEventsEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="EventId"
+    Precision="8"
+    Scale="0"
+    ColumnName="EVENT_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.CALENDAR_EVENTS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="StartDateTime"
+    ColumnName="START_DATE_TIME"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.CALENDAR_EVENTS"/>
+  <Attribute
+    Name="EndDateTime"
+    ColumnName="END_DATE_TIME"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="PRA_OWNER.CALENDAR_EVENTS"/>
+  <Attribute
+    Name="IsAllDayEvent"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="IS_ALL_DAY_EVENT"
+    SQLType="CHAR"
+    Type="java.lang.String"
+    ColumnType="CHAR"
+    TableName="PRA_OWNER.CALENDAR_EVENTS"
+    RetrievedOnUpdate="true"
+    RetrievedOnInsert="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Location"
+    Precision="100"
+    ColumnName="LOCATION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.CALENDAR_EVENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PatientId"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="PATIENT_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PRA_OWNER.CALENDAR_EVENTS"/>
+  <Attribute
+    Name="EventLabel"
+    IsNotNull="true"
+    Precision="8"
+    ColumnName="EVENT_LABEL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.CALENDAR_EVENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="8"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EventTitle"
+    IsNotNull="true"
+    Precision="50"
+    ColumnName="EVENT_TITLE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.CALENDAR_EVENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EventDescription"
+    Precision="100"
+    ColumnName="EVENT_DESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRA_OWNER.CALENDAR_EVENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="PatientsTEO"
+    Association="model.entities.SysC00363666Assoc"
+    AssociationEnd="model.entities.SysC00363666Assoc.PatientsTEO"
+    AssociationOtherEnd="model.entities.SysC00363666Assoc.CalendarEventsEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="RecurrencesEO"
+    Association="model.entities.SysC00363672Assoc"
+    AssociationEnd="model.entities.SysC00363672Assoc.RecurrencesEO"
+    AssociationOtherEnd="model.entities.SysC00363672Assoc.CalendarEventsEO"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="SysC00363665"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C00363665"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.CalendarEventsEO.EventId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC00363666">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="PATIENT_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="SYS_C00363666"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.CalendarEventsEO.PatientId"/>
+    </AttrArray>
+  </Key>
+</Entity>

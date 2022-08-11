@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48"
+                id="AppModule_RecurrencesVOResources" Package="model.rest.v1" usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="RecurrencesVO2" RangeSize="25" DataControl="AppModuleDataControl" id="RecurrencesVO2Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="RecurrencesVO2Iter" id="Recurrences" AccessorFolder="Always">
+      <ServiceConfiguration EnableRowContextLOV="false"/>
+      <nodeDefinition DefName="model.views.RecurrencesVO" Name="model.views.RecurrencesVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>
